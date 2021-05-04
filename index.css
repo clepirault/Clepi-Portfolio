@@ -37,6 +37,20 @@ header nav{
   /* none */
   font-size: 3vw;
 }
+.about{
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.about img{
+  width: 50vw;
+  height: 100%;
+}
+.about p{
+  padding: 3rem;
+}
 /* FOOTER PART */
 footer{
   border-top: 2px solid black;
