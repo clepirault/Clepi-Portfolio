@@ -1,0 +1,115 @@
+*{
+  margin: 0;
+  padding: 0;
+  /* font-family: 'PT Serif', serif; */
+  font-family: 'Hind', sans-serif;
+}
+li{
+  list-style-type: none;
+}
+a:hover{
+  color: grey;
+  text-decoration: none;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+/* HEADER */
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* FIXED */
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+  filter: drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.2));
+}
+header h1{
+  padding-right: 1rem;
+}
+header nav{
+  border-left: 2px solid black;
+  padding-left: 1rem;
+}
+/* FOOTER */
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 4.5rem;
+  border-top: 2px solid black;
+}
+.social{
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+/* HOME CONTENT*/
+.homeImage{
+  background-image: url('./home.jpg');
+  background-size: 100vw;
+}
+.homeTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EEEEFE; */
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 55vw; /* ??? */
+}
+.homeTitle h1{
+  padding-top: 3rem;
+  font-size: 3.2vw;
+}
+.homeContent{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 90vw;
+}
+/* ITEMS - TEMPLATE */
+section{
+  font-size: 1.8vw;
+}
+section p{
+  padding: 3vw;
+  /* text-align: justify; */
+}
+.images{
+  width: 45vw;
+}
+.itemsDescription{
+  display: flex;
+  flex-direction: column;
+}
+/* ABOUT ITEM */
+.about{
+  display: flex;
+  align-items: center;
+  height: 20em;
+}
+.aboutWCS{
+  background-color: rgb(240, 240, 240);
+  border-radius: 0.9rem;
+  margin-right: 3vw;
+  font-weight: bold;
+}
+.aboutWCS h3{
+  text-align: right;
+  margin-bottom: -3vw;
+  padding-right: 4vw;
+}
+/* PROJECTS ITEM */
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 24em;
+}
+#projects div{
+  display: flex;
+}

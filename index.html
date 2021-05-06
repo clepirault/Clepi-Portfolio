@@ -4,22 +4,21 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="style.css">
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
   <title>Clémence Pirault | Portfolio</title>
 </head>
-
 <body>
   <header>
     <h1>Clepi</h1>
     <nav>
       <ul>
-        <li>Projets</li>
+        <li><a href="#projects">Projets</a></li>
+        <li>Compétences</li>
         <li>Parcours</li>
-        <li>Contact</li>
       </ul>
     </nav>
   </header>
@@ -33,10 +32,26 @@
       <section class="about">
         <div>
           <h2>A propos de moi...</h2>
-          <p>Mon attrait pour l'évasion m'a mené après mon baccaleauréat vers des études dans le Tourisme.
-          Après dix années dans un secteur passionnant, j'ai fait le choix de me reconvertir dans le développement web. <button type="button">En savoir plus...</button></p>
+          <div class="itemsDescription">
+            <p>A 29 ans, et après 10 années passées dans l'industrie du Tourisme, j'ai décidé de me reconvertir dans le Développement web.</p>
+            <div class="aboutWCS">
+              <h3>La Wild Code School</h3>
+              <p>J'ai choisi de faire confiance à la Wild Code School de Nantes pour me former.</p>
+            </div>
+          </div>
         </div>
-        <img src="./simple.jpg" alt="simple">
+        <img class="images" src="./simple.jpg" alt="simple">
+        <!-- <img src="./photo.png" alt="photo"> -->
+      </section>
+      <section id="projects">
+        <h2>Projets réalisés</h2>
+        <div>
+          <img class="images" src="./portfolioProject.png" alt="portfolioProject">
+          <div class="itemsDescription">
+            <h3>Portfolio</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis aperiam dolorem porro fugiat nemo modi! Impedit vero ipsum nulla, sequi ratione assumenda veniam rem explicabo libero. Voluptatibus, explicabo tenetur!<br>Techniques : réalisé en HTML et CSS uniquement.</p>
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -47,16 +62,8 @@
       <li><img src="./mail.svg" alt="Contact" title="Contact"></li>
       <li><img src="./download.svg" alt="CV" title="Télécharger mon CV"></li>
     </ul>
-    <!-- <nav>
-      <ul>
-        <li>Projets</li>
-        <li>Parcours</li>
-        <li>Contact</li>
-      </ul>
-    </nav> -->
     <h6>Copyright 2021</h6>
     <h6>clepirault@gmail.com - +33648981540</h6>
   </footer>
-
 </body>
 </html>
