@@ -41,13 +41,14 @@ footer{
   align-items: center;
   height: 4.5rem;
   border-top: 2px solid black;
+  margin-top: 2rem;
 }
 .social{
   display: flex;
   justify-content: space-between;
   width: 7rem;
 }
-/* HOME CONTENT*/
+/* HOME IMAGE AND TITLE */
 .homeImage{
   background-image: url('./home.jpg');
   background-size: 100vw;
@@ -63,7 +64,10 @@ footer{
 .homeTitle h1{
   padding-top: 3rem;
   font-size: 3.2vw;
+  /* color: rgb(36, 36, 78); */
+  /* filter: drop-shadow(1px 3px 9px rgba(0, 0, 0, 0.5)); */
 }
+/* HOME CONTENT */
 .homeContent{
   display: flex;
   flex-direction: column;
@@ -84,32 +88,56 @@ section p{
 .itemsDescription{
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 /* ABOUT ITEM */
 .about{
   display: flex;
   align-items: center;
-  height: 20em;
+  height: 21em;
 }
-.aboutWCS{
+.about img{
+  height: 90%;
+  width: 17rem;
+  border-radius: 50%;
+}
+.aboutSchool{
   background-color: rgb(240, 240, 240);
   border-radius: 0.9rem;
   margin-right: 3vw;
   font-weight: bold;
+  text-align: justify;
 }
-.aboutWCS h3{
+.aboutSchool h3{
   text-align: right;
-  margin-bottom: -3vw;
-  padding-right: 4vw;
+  margin-bottom: -1vw;
+  padding-right: 3vw;
 }
 /* PROJECTS ITEM */
 #projects{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
-  height: 24em;
+  padding-top: 2rem;
 }
 #projects div{
   display: flex;
+}
+.project1{
+  height: 15em;
+  padding-top: 3rem;
+}
+.project1 img{
+  align-self: center;
+}
+.project2{
+  height: 15em;
+  padding-top: 3rem;
+}
+.project2 img{
+  align-self: center;
+  width: auto;
+  height: 20vw;
+  margin-left: 5vw;
+  margin-right: 6vw;
 }
