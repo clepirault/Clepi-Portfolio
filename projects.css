@@ -1,26 +1,60 @@
-#projects div {
-  display: flex;
-  align-items: center;
-  margin-bottom: 3rem;
-}
-
-#projects div div {
+.projects { /* PROJECTS SECTION */
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  background-color: rgba(243, 236, 224, 0.4);
+  align-items: center;
+}
+.projectsContent { /* TITLE + TEXT */
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  height: 70%;
+  background-color: rgba(243, 236, 224, 0.5);
   border-radius: 5em;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
   padding: 3em;
 }
 
-.project1 img {
-  width: 40%;
-  height: 100%;
+/* BY ITEM */
+.naotri {
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 4em;
+}
+.hackathon {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin-bottom: 4em;
+}
+.portfolio {
+  display: flex;
+  align-items: center;
+}
+.naotri img, .hackathon img {
+  height: 40vh;
+  margin-right: 3em;
+}
+.portfolio img {
+  width: 100%;
 }
 
-.project2 img {
-  height: 20vw;
-  margin-left: 5vw;
-  margin-right: 6vw;
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills p {
+  background-color: rgba(243, 236, 224, 0.5);
+  border-radius: 5em;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
+  padding: 3em;
+  width: 30vw;
+  margin-bottom: 3em;
+}
+.skillsicon {
+  height: 4em;
 }

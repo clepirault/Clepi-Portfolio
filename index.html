@@ -8,30 +8,30 @@
     <link rel="stylesheet" href="headerFooter.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="projects.css" />
     <title>Clémence Pirault | Portfolio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header>
       <div class="header">
-        <h1>Clepi</h1>
+        <h1><a href="#home">Clepi</a></h1>
         <div></div>
         <nav>
           <ul>
             <li><a href="#projects">Projets</a></li>
-            <li><a href="#skills"></a>Compétences</li>
-            <li><a href="#about"></a>Parcours</li>
-            <li><a href="#contact"></a>Infos & contacts</li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#about">Parcours</a></li>
+            <li><a href="#contact">Infos & contacts</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <!-- HOME -->
-    <div class="homeImage">
+    <div class="homeImage" id="home">
       <div class="homeContent">
-        <h1>Clémence Pirault | Développeuse web junior REACT</h1>
+        <h1>Clémence Pirault | Développeuse web junior</h1>
       </div>
     </div>
     <!-- CONTENT -->
@@ -48,26 +48,36 @@
         </div>
         <img class="avatar" src="./avatar.png" alt="avatar" />
       </section>
-
-      <section>
-          <h3>La Wild Code School</h3>
-          <p>
-            J'ai choisi de faire confiance à la Wild Code School de Nantes pour apprendre les bases du métier et me lancer dans cette nouvelle voie. <br>
-            En amont, je m'étais déjà formée par moi même sur les techniques d'HTML/CSS ainsi que sur l'algoritmie de manière générale, via OpenClassRooms et plusieurs vidéos Youtube. <br>
-            C'est d'ailleurs cet apprentissage en autodidacte qui m'a m'a convaincue à réaliser ma reconversion professionnelle.
-          </p>
-      </section>
-
       <!-- PROJECTS SECTION -->
-      <h2>Projets réalisés</h2>
-      <section id="projects">
-
-        <div class="project1">
-          <img
-            src="./portfolioProject.png"
-            alt="portfolioProject"
-          />
-          <div>
+      <h2 id="projects">Projets réalisés</h2>
+      <section class="projects">
+        <div class="naotri">
+          <div><img src="./naotri.png" alt="naotriProject" /></div>
+          <div class="projectsContent">
+            <h3>Le projet NAOTRI</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
+              ullam quasi consequuntur provident facilis amet sint, nobis, quod
+              tempore aliquid eos maiores.
+            </p>
+          </div>
+        </div>
+        <div class="hackathon">
+          <div><img src="./adopt.png" alt="hackathonProject" /></div>
+          <div class="projectsContent">
+            <h3>Adopt-1-Alien</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
+              ullam quasi consequuntur provident facilis amet sint, nobis, quod
+              tempore aliquid eos maiores.
+            </p>
+          </div>
+        </div>
+        <div class="portfolio">
+          <div><img src="./portfolio.png" alt="portfolioProject" /></div>
+          <div class="projectsContent">
             <h3>Portfolio</h3>
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
@@ -77,20 +87,28 @@
             </p>
           </div>
         </div>
-
-        <div class="project2">
-          <div>
-            <h3>Le projet NAOTRI</h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
-              ullam quasi consequuntur provident facilis amet sint, nobis, quod
-              tempore aliquid eos maiores.
-            </p>
-          </div>
-          <img src="./naotriProject.png" alt="naotriProject" />
+      </section>
+      <h2 id="skills">Compétences</h2>
+      <section class="skills">
+        <p>
+          Créer une maquette avec Figma <br />
+          Produire une page web statique avec HTML/CSS <br />
+          Ecrire des algorithmes en JavaScript <br />
+          Développer une application en REACT <br>
+          Appeler une API, utiliser Express <br>
+          Créer et manipuler une base de données avec MySQL <br>
+          Travailler en équipe avec Git et le Git workflow <br>
+          Conduire un projet avec les méthodes agiles
+        </p>
+        <div>
+          <img class="skillsicon" src="./htmlicon.png" alt="html">
+          <img class="skillsicon" src="./cssicon.png" alt="css">
+          <img class="skillsicon" src="./jsicon.png" alt="javascript">
+          <img class="skillsicon" src="./giticon.png" alt="git">
+          <img class="skillsicon" src="./nodeicon.png" alt="node">
+          <img class="skillsicon" src="./reacticon.png" alt="react">
+          <img class="skillsicon" src="./mysqlicon.png" alt="mysql">
         </div>
-
       </section>
     </main>
     <!-- FOOTER -->
