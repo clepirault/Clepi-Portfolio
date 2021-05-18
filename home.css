@@ -1,0 +1,20 @@
+/* HOME IMAGE AND TITLE */
+.homeImage {
+  background-image: url('./home.jpg');
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  margin-top: 83px;
+  height: 50vw;
+  /* !RESPONSIVE */
+}
+.homeContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 100%;
+}
+.homeContent h1 {
+  /* filter: drop-shadow(1px 3px 9px rgba(0, 0, 0, 0.5)); */
+  font-size: 3.5vw;
+}

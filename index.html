@@ -1,76 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet"> -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap" rel="stylesheet">
-  <title>Clémence Pirault | Portfolio</title>
-</head>
-<body>
-  <header>
-    <h1>Clepi</h1>
-    <nav>
-      <ul>
-        <li><a href="#projects">Projets</a></li>
-        <li>Compétences</li>
-        <li>Parcours</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="headerFooter.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="projects.css">
+    <title>Clémence Pirault | Portfolio</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header">
+        <h1>Clepi</h1>
+        <div></div>
+        <nav>
+          <ul>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills"></a>Compétences</li>
+            <li><a href="#about"></a>Parcours</li>
+            <li><a href="#contact"></a>Infos & contacts</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- HOME -->
     <div class="homeImage">
-      <div class="homeTitle">
-          <h1>Clémence Pirault | Développeuse web junior REACT</h1>
+      <div class="homeContent">
+        <h1>Clémence Pirault | Développeuse web junior REACT</h1>
       </div>
     </div>
-    <div class="homeContent">
+    <!-- CONTENT -->
+    <main>
+      <!-- ABOUT SECTION -->
       <section class="about">
         <div>
           <h2>A propos de moi...</h2>
-          <div class="itemsDescription">
-            <p>A 29 ans, et après 10 années passées dans l'industrie du Tourisme, j'ai décidé de me reconvertir dans le Développement web.</p>
-            <div class="aboutSchool">
-              <h3>La Wild Code School</h3>
-              <p>J'ai choisi de faire confiance à la Wild Code School de Nantes pour me former.</p>
-            </div>
-          </div>
+          <p>
+            A 29 ans, et après 10 années passées dans l'industrie du Tourisme,
+            j'ai décidé de me reconvertir, et devenir Développeuse web.
+          </p>
+          <button>En savoir plus</button>
         </div>
-        <img class="images" src="./simple.jpg" alt="simple">
-        <!-- <img src="./photo.png" alt="photo"> -->
+        <img class="avatar" src="./avatar.png" alt="avatar" />
       </section>
+
+      <section>
+          <h3>La Wild Code School</h3>
+          <p>
+            J'ai choisi de faire confiance à la Wild Code School de Nantes pour apprendre les bases du métier et me lancer dans cette nouvelle voie. <br>
+            En amont, je m'étais déjà formée par moi même sur les techniques d'HTML/CSS ainsi que sur l'algoritmie de manière générale, via OpenClassRooms et plusieurs vidéos Youtube. <br>
+            C'est d'ailleurs cet apprentissage en autodidacte qui m'a m'a convaincue à réaliser ma reconversion professionnelle.
+          </p>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <h2>Projets réalisés</h2>
       <section id="projects">
-        <h2>Projets réalisés</h2>
+
         <div class="project1">
-          <img class="images" src="./portfolioProject.png" alt="portfolioProject">
-          <div class="itemsDescription">
+          <img
+            src="./portfolioProject.png"
+            alt="portfolioProject"
+          />
+          <div>
             <h3>Portfolio</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta debitis aperiam dolorem porro fugiat nemo modi! Impedit vero ipsum nulla, sequi ratione assumenda veniam rem explicabo libero. Voluptatibus, explicabo tenetur!<br>Techniques : réalisé en HTML et CSS uniquement.</p>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              debitis aperiam dolorem porro fugiat nemo modi! Impedit vero ipsum
+              nulla, sequi ratione assumenda veniam rem explicabo libero.
+              Voluptatibus, explicabo tenetur!
+            </p>
           </div>
         </div>
+
         <div class="project2">
-          <div class="itemsDescription">
+          <div>
             <h3>Le projet NAOTRI</h3>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas maiores odit numquam recusandae? Adipisci, laudantium dicta aut ullam quasi consequuntur provident facilis amet sint, nobis, quod tempore aliquid eos maiores.<br>Lien vers l'application : https://wcsnaotri.netlify.app/ </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
+              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
+              ullam quasi consequuntur provident facilis amet sint, nobis, quod
+              tempore aliquid eos maiores.
+            </p>
           </div>
-          <img class="images" src="./naotriProject.png" alt="naotriProject">
+          <img src="./naotriProject.png" alt="naotriProject" />
         </div>
+
       </section>
-    </div> <!-- HOME CONTENT -->
-  </main>
-  <footer>
-    <ul class="social">
-      <li><img src="./github.svg" alt="Github" title="Github"></li>
-      <li><img src="./LinkedIn.svg" alt="LinkedIn" title="LinkedIn"></li>
-      <li><img src="./mail.svg" alt="Contact" title="Contact"></li>
-      <li><img src="./download.svg" alt="CV" title="Télécharger mon CV"></li>
-    </ul>
-    <h6>Copyright 2021</h6>
-    <h6>clepirault@gmail.com - +33648981540</h6>
-  </footer>
-</body>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <ul class="social">
+        <li><img src="./github.svg" alt="Github" title="Github" /></li>
+        <li><img src="./LinkedIn.svg" alt="LinkedIn" title="LinkedIn" /></li>
+        <li><img src="./mail.svg" alt="Contact" title="Contact" /></li>
+        <li>
+          <img src="./download.svg" alt="CV" title="Télécharger mon CV" />
+        </li>
+      </ul>
+      <p>clepirault@gmail.com | +33648981540</p>
+    </footer>
+  </body>
 </html>
