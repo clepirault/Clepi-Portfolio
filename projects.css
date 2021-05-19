@@ -69,3 +69,8 @@
 .skillsicon {
   height: 4em;
 }
+/* SOFT SKILLS */
+.softSkills {
+  width: 70vw;
+  text-align: justify;
+}
