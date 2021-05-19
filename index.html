@@ -38,13 +38,22 @@
     <main>
       <!-- ABOUT SECTION -->
       <section class="about">
-        <div>
+        <div class="aboutContent">
           <h2>A propos de moi...</h2>
           <p>
             A 29 ans, et après 10 années passées dans l'industrie du Tourisme,
             j'ai décidé de me reconvertir, et devenir Développeuse web.
           </p>
-          <button>En savoir plus</button>
+          <div class="buttons">
+            <button class="cvButton">
+              <a href="./cv-clemence-pirault.pdf" target="_blank"
+                >Télécharger mon CV</a
+              >
+            </button>
+            <button class="aboutButton">
+              <a href="#about">En savoir plus</a>
+            </button>
+          </div>
         </div>
         <img class="avatar" src="./avatar.png" alt="avatar" />
       </section>
@@ -52,19 +61,31 @@
       <h2 id="projects">Projets réalisés</h2>
       <section class="projects">
         <div class="naotri">
-          <div><img src="./naotri.png" alt="naotriProject" /></div>
+          <div>
+            <img class="naotriimg" src="./naotri.png" alt="naotriProject" />
+          </div>
           <div class="projectsContent">
             <h3>Le projet NAOTRI</h3>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
               maiores odit numquam recusandae? Adipisci, laudantium dicta aut
               ullam quasi consequuntur provident facilis amet sint, nobis, quod
-              tempore aliquid eos maiores.
+              tempore aliquid eos maiores. <br />
             </p>
+            <div>
+              <img class="projectsicon" src="./github.svg" alt="github" />
+              <img class="projectsicon" src="./link.svg" alt="link" />
+            </div>
           </div>
         </div>
         <div class="hackathon">
-          <div><img src="./adopt.png" alt="hackathonProject" /></div>
+          <div>
+            <img
+              class="hackathonimg"
+              src="./adopt.png"
+              alt="hackathonProject"
+            />
+          </div>
           <div class="projectsContent">
             <h3>Adopt-1-Alien</h3>
             <p>
@@ -73,18 +94,26 @@
               ullam quasi consequuntur provident facilis amet sint, nobis, quod
               tempore aliquid eos maiores.
             </p>
+            <div>
+              <img class="projectsicon" src="./github.svg" alt="github" />
+              <img class="projectsicon" src="./link.svg" alt="link" />
+            </div>
           </div>
         </div>
         <div class="portfolio">
-          <div><img src="./portfolio.png" alt="portfolioProject" /></div>
+          <div>
+            <img
+              class="portfolioimg"
+              src="./portfolio.png"
+              alt="portfolioProject"
+            />
+          </div>
           <div class="projectsContent">
             <h3>Portfolio</h3>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
-              debitis aperiam dolorem porro fugiat nemo modi! Impedit vero ipsum
-              nulla, sequi ratione assumenda veniam rem explicabo libero.
-              Voluptatibus, explicabo tenetur!
+              J'ai choisi de réaliser mon portfolio uniquement en HTML et CSS.
             </p>
+            <img class="projectsicon" src="./github.svg" alt="github" />
           </div>
         </div>
       </section>
@@ -94,20 +123,92 @@
           Créer une maquette avec Figma <br />
           Produire une page web statique avec HTML/CSS <br />
           Ecrire des algorithmes en JavaScript <br />
-          Développer une application en REACT <br>
-          Appeler une API, utiliser Express <br>
-          Créer et manipuler une base de données avec MySQL <br>
-          Travailler en équipe avec Git et le Git workflow <br>
-          Conduire un projet avec les méthodes agiles
+          Développer une application en REACT <br />
+          Appeler une API, utiliser Express <br />
+          Stocker des données dans le navigateur avec le local storage Créer et
+          manipuler une base de données avec MySQL <br />
+          Travailler en équipe avec Git et le Git workflow <br />
+          Conduire un projet avec les méthodes agiles <br />
+          <br />
+          Dépôt Github pour montrer quelques unes de mes compétences en REACT :
+          <a
+            href="https://github.com/clepirault/clepi-skills/tree/master/src/components"
+            target="_blank"
+            >ici</a
+          >
         </p>
         <div>
-          <img class="skillsicon" src="./htmlicon.png" alt="html">
-          <img class="skillsicon" src="./cssicon.png" alt="css">
-          <img class="skillsicon" src="./jsicon.png" alt="javascript">
-          <img class="skillsicon" src="./giticon.png" alt="git">
-          <img class="skillsicon" src="./nodeicon.png" alt="node">
-          <img class="skillsicon" src="./reacticon.png" alt="react">
-          <img class="skillsicon" src="./mysqlicon.png" alt="mysql">
+          <img class="skillsicon" src="./htmlicon.png" alt="html" />
+          <img class="skillsicon" src="./cssicon.png" alt="css" />
+          <img class="skillsicon" src="./jsicon.png" alt="javascript" />
+          <img class="skillsicon" src="./giticon.png" alt="git" />
+          <img class="skillsicon" src="./nodeicon.png" alt="node" />
+          <img class="skillsicon" src="./reacticon.png" alt="react" />
+          <img class="skillsicon" src="./mysqlicon.png" alt="mysql" />
+        </div>
+      </section>
+      <h2>Soft skills</h2>
+      <section class="softSkills">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione dolorum inventore est consequatur minima quae voluptas maxime! Quisquam laborum suscipit dicta quo facilis, explicabo accusamus illum, consectetur ut, consequuntur doloremque!
+      </section>
+      <h2 id="about">Mon parcours</h2>
+      <section class="history">
+        <ul class="historynav">
+          <li>Reconversion professionnelle</li>
+          <li><a href="#experience">Expérience</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+        <h3 id="experience">Expérience</h3>
+        <div class="experience">
+          <div>            
+            <h3>Conseillère voyages</h3>
+            <p>SPOTS D'EVASION, Nantes (44)</p>
+            <p>Avr.2017 - ACTUEL</p>
+            <p>Spécialiste en production et vente de voyages thématiques plongée/kitesurf/windsurf</p>
+            <p>Compétences : relation client et founisseur, pratique de l'anglais, qualités de gestion, organisation, redaction</p>
+            <button onclick="showExperience5Details()">Voir détail</button>
+            <p class="experience5Detail">
+            - Réception et étude de la demande du client par e-mail ou téléphone <br>
+            - Échange avec les fournisseurs essentiellement en anglais par e-mail et téléphone <br>
+            - Utilisation du GDS Galileo pour les prestations aériennes <br>
+            - Conception du devis à la carte ou sur-mesure, via le logiciel Tourbiz <br>
+            - Faire preuve de force de vente afin d'amener le client à l'achat tout en le conseillant du mieux possible <br>
+            - Élaboration des contrats de vente et gestion des dossiers <br>
+            - Élaboration du carnet de voyage <br>
+            - Disponibilité durant le voyage du client, gestion des éventuels dysfonctionnements à distance <br>
+            - Service après-vente </p>
+          </div>
+          <div>
+            <h3>Agent d'opérations location</h3>
+            <p>SIXT RENT A CAR, AEROPORT NANTES ATLANTIQUE (44)</p>
+            <p>Sept.2016 - Jan.2017</p>
+            <p>Agence de location de véhicules</p>
+            <p>Compétences : relation client, pratique de l'anglais</p>
+            <button onclick="showExperience4Details()">Voir détail</button>
+            <p class="experience4Detail">
+              - Accueil d'une clientèle loisirs et affaires internationale <br>
+              - Élaboration des contrats de location <br>      
+              - Gestion du parc de véhicules</p>
+          </div>
+
+        </div>
+        <h3 id="education">Education</h3>
+        <div class="education">
+          <div>
+            2013 <br>
+            Licence Tourisme <br>
+            Université d'Angers (49)
+          </div>
+          <div>
+            2012 <br>
+            BTS Ventes et Productions Touristiques <br>
+            IMS, Nantes (44)
+          </div>
+          <div>
+            2010 <br>
+            Baccaleauréat technologique (Sciences et Technologies de la Gestion) <br>
+            Lycée St-Félix, Nantes (44)
+          </div>
         </div>
       </section>
     </main>
@@ -123,5 +224,6 @@
       </ul>
       <p>clepirault@gmail.com | +33648981540</p>
     </footer>
+  <script src="./index.js"></script>
   </body>
 </html>

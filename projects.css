@@ -6,8 +6,6 @@
 .projectsContent { /* TITLE + TEXT */
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
-  height: 70%;
   background-color: rgba(243, 236, 224, 0.5);
   border-radius: 5em;
   box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.2);
@@ -21,7 +19,17 @@
   align-items: center;
   width: 60%;
   margin-bottom: 4em;
+  /* animation-name: slidein;
+  animation-duration: 2s; */
 }
+/* @keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+} */
 .hackathon {
   align-self: flex-end;
   display: flex;
@@ -33,12 +41,15 @@
   display: flex;
   align-items: center;
 }
-.naotri img, .hackathon img {
+.naotriimg, .hackathonimg {
   height: 40vh;
   margin-right: 3em;
 }
-.portfolio img {
-  width: 100%;
+.portfolioimg {
+  width: 30vw;
+}
+.projectsicon {
+  width: 1.5em;
 }
 
 /* SKILLS */
