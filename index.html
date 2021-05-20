@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="about.css" />
     <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link rel="stylesheet" href="info.css" />
     <title>Clémence Pirault | Portfolio</title>
   </head>
   <body>
@@ -23,7 +25,7 @@
             <li><a href="#projects">Projets</a></li>
             <li><a href="#skills">Compétences</a></li>
             <li><a href="#about">Parcours</a></li>
-            <li><a href="#contact">Infos & contacts</a></li>
+            <li><a href="#info">Infos & contacts</a></li>
           </ul>
         </nav>
       </div>
@@ -67,14 +69,11 @@
           <div class="projectsContent">
             <h3>Le projet NAOTRI</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
-              ullam quasi consequuntur provident facilis amet sint, nobis, quod
-              tempore aliquid eos maiores. <br />
+              Application web mobile pour inciter les utilisateurs à mieux recycler, de manière ludique. Réalisée en 5 semaines, dans le cadre de la formation Développeur/se web de la Wild Code School de Nantes, avec une équipe de 5. <br> Projet réalisé en REACT, et suivant les méthodes agiles.              
             </p>
             <div>
-              <img class="projectsicon" src="./github.svg" alt="github" />
-              <img class="projectsicon" src="./link.svg" alt="link" />
+              <a href="https://github.com/clepirault/nts-js-202103-p2-recyclage" target="_blank"><img class="projectsicon" src="./github.svg" alt="github" /></a>
+              <a href="https://wcsnaotri.netlify.app/" target="_blank"><img class="projectsicon" src="./link.svg" alt="link" /></a>
             </div>
           </div>
         </div>
@@ -89,14 +88,12 @@
           <div class="projectsContent">
             <h3>Adopt-1-Alien</h3>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas
-              maiores odit numquam recusandae? Adipisci, laudantium dicta aut
-              ullam quasi consequuntur provident facilis amet sint, nobis, quod
-              tempore aliquid eos maiores.
+              Application web mobile de rencontre entre humains et aliens dans l'Espace. Réalisé sur un hackathon de 24H, dans le cadre de la formation Développeur/se web de la Wild Code School de Nantes, avec une équipe de 4 (100% féminine). <br>
+              Projet réalisé en REACT.
             </p>
             <div>
-              <img class="projectsicon" src="./github.svg" alt="github" />
-              <img class="projectsicon" src="./link.svg" alt="link" />
+              <a href="https://github.com/clepirault/Adopt-un-alien" target="_blank"><img class="projectsicon" src="./github.svg" alt="github" /></a>
+              <a href="https://adopt-1-alien.netlify.app/" target="_blank"><img class="projectsicon" src="./link.svg" alt="link" /></a>
             </div>
           </div>
         </div>
@@ -111,36 +108,43 @@
           <div class="projectsContent">
             <h3>Portfolio</h3>
             <p>
-              Pour présenter mon travail et vous permettre de me connaitre un
-              peu mieux, j'ai choisi de réaliser un porfolio simple, dans un
-              style épuré et aéré, en HTML/CSS et une note de JavaScript.<br />
+              Pour présenter mon travail et permettre de mieux me connaitre, j'ai choisi de réaliser un porfolio simple et responsive, en HTML/CSS et une note de
+              JavaScript.<br />
               N'hésitez pas à cliquer sur le petit Github pour voir mon code.
             </p>
-            <a href="https://github.com/clepirault/Clepi-Portfolio/tree/feature-home" target="_blank"><img class="projectsicon" src="./github.svg" alt="github" /></a>
+            <a
+              href="https://github.com/clepirault/Clepi-Portfolio/tree/dev"
+              target="_blank"
+              ><img class="projectsicon" src="./github.svg" alt="github"
+            /></a>
           </div>
         </div>
       </section>
       <h2 id="skills">Compétences</h2>
       <section class="skills">
         <p>
-          Créer une maquette avec Figma <br />
-          Produire une page web statique avec HTML/CSS <br />
-          Ecrire des algorithmes en JavaScript <br />
-          Développer une application en REACT <br />
-          Appeler une API, utiliser Express <br />
-          Stocker des données dans le navigateur avec le local storage Créer et
-          manipuler une base de données avec MySQL <br />
-          <strong>Travailler en équipe</strong> avec Git et le Git workflow <br />
-          Conduire un projet avec les méthodes agiles <br />
+          Créer une <strong>maquette</strong> avec Figma <br />
+          Produire une <strong>page web statique</strong> et <strong>responsive</strong> avec HTML/CSS <br />
+          Ecrire des <strong>algorithmes</strong> en JavaScript <br />
+          Développer une <strong>application</strong> en REACT <br />
+          Appeler une <strong>API</strong>, utiliser Express <br />
+          Stocker des données dans le navigateur avec le
+          <strong>localStorage</strong> <br />
+          Créer et manipuler une <strong>base de données</strong> avec MySQL
+          <br />
+          <strong>Travailler en équipe</strong> avec Git et le Git workflow
+          <br />
+          Conduire un projet avec les <strong>méthodes agiles</strong
+          ><!-- <br />
           <br />
           Dépôt Github pour vous montrer quelques unes de mes compétences en REACT :
           <a
             href="https://github.com/clepirault/clepi-skills/tree/master/src/components"
             target="_blank"
             >ici</a
-          >
+          > -->
         </p>
-        <div>
+        <div class="skillsicons">
           <img class="skillsicon" src="./htmlicon.png" alt="html" />
           <img class="skillsicon" src="./cssicon.png" alt="css" />
           <img class="skillsicon" src="./jsicon.png" alt="javascript" />
@@ -152,8 +156,19 @@
       </section>
       <h2>Soft skills</h2>
       <section class="softSkills">
-        <p>Ma principale qualité dans un contexte professionnel est <strong> l'organisation</strong>. Autour de cela, j'ai puisé de chacune de mes expériences une grande volonté <strong>d'efficacité et de rigueur</strong> dans mon travail, de relever chaque défi avec <strong> curiosité et adaptabilité</strong>, en équipe ou en autonomie, une pratique récurrente de <strong>l'anglais</strong> qui me permet de bien maitriser la langue, et des années de <strong>relation client</strong> qui me permettent aujourd'hui d'être à l'aise dans un contexte commercial.</p>
+        <p>
+          Ma principale qualité dans l'occupation d'une fonction est
+          l'<strong>organisation</strong>. J'ai ensuite puisé de
+          chacune de mes expériences une grande volonté
+          de <strong>rigueur</strong> dans mon travail, de
+          relever chaque défi avec <strong>ouverture d'esprit</strong> et <strong>adaptabilité</strong>,
+          en autonomie ou en équipe. La pratique régulière de
+          <strong>l'anglais</strong> me permet de bien maitriser cette langue,
+          et mes années de <strong>relation client</strong> me permettent
+          aujourd'hui d'être à l'aise dans un contexte approprié.
+        </p>
       </section>
+      <!-- HISTORY -->
       <h2 id="about">Mon parcours</h2>
       <section class="history">
         <ul class="historynav">
@@ -167,15 +182,35 @@
             <h3>La Wild Code School de Nantes</h3>
             <p>Formation Développeur/se web en 5 mois</p>
             <p>MARS 2021 - JUIL. 2021 (EN COURS)</p>
-            <p>Programme de la formation :<a href="./dev.pdf" target="_blank">ici</a></p>
+            <p>
+              Programme de la formation :<a href="./dev.pdf" target="_blank"
+                >ici</a
+              >
+            </p>
           </div>
           <div class="reconversionDetail">
-            <h3>Pourquoi ?</h3><br>
-            <p> Mon envie de reconversion m'est venue au même moment que la sensation d'avoir fait le tour de mon métier de conseillère voyages. <br><br>
-            J'étais très attirée par la perspective "métiers d'avenir" que véhiculait l'industrie du Numérique. De plus, la métropole nantaise semblait recouvrir un écosystème très riche dans le domaine.<br><br>
-            J'ai commencé par apprendre en autodidacte via des chaines Youtube et la plate-forme OpenClassrooms les bases de la conception d'un site web et de l'algorithmique. Je suis allée à la rencontre de professionnels du secteur pour discuter avec eux. <br> <br>
-            Je me suis reconnue dans beaucoup de choses, principalement la créativité, la curiosité à avoir, le désir d'apprendre en permanence, de résoudre des problèmes. Alors je me suis lancée. <br> <br>
-            J'ai bénéficié du Projet de Transition Professionnelle proposé par Transitions Pro afin d'accéder à la formation de la Wild Code School de Nantes.</p>
+            <h3>Pourquoi ?</h3>
+            <br />
+            <p>
+              Mon envie de reconversion m'est venue en même temps que la
+              sensation d'avoir fait le tour de mon métier de conseillère
+              voyages. <br /><br />
+              J'étais très attirée par la perspective "métiers d'avenir" que
+              véhiculait l'industrie du Numérique. De plus, la métropole
+              nantaise semblait recouvrir un écosystème très riche dans le
+              domaine.<br /><br />
+              J'ai commencé par apprendre en autodidacte via des chaines Youtube
+              et la plate-forme OpenClassrooms les bases de la conception d'un
+              site web et de l'algorithmie. Je suis allée à la rencontre de
+              professionnels du secteur pour discuter avec eux. <br />
+              <br />
+              Je me suis reconnue dans beaucoup de choses, principalement la
+              créativité, la curiosité à avoir, le désir d'apprendre en
+              permanence. Alors je me suis lancée.
+              <br />
+              <br />
+              J'ai bénéficié du Projet de Transition Professionnelle afin d'accéder à la formation : Développeur/se web, de la Wild Code School de Nantes.
+            </p>
           </div>
         </div>
         <h3 id="experience">Expérience</h3>
@@ -187,11 +222,7 @@
             <p>
               Spécialiste en production et vente de voyages thématiques
               plongée/kitesurf/windsurf
-            </p>
-            <p>
-              Compétences : relation client, pratique de l'anglais, qualités de
-              gestion, organisation, redaction
-            </p>
+            </p>            
             <br />
             <button onclick="showExperience5Details()">Voir détail</button>
             <p class="experience5Detail">
@@ -215,8 +246,7 @@
             <h3>Agent d'opérations location</h3>
             <p>SIXT RENT A CAR, AEROPORT NANTES ATLANTIQUE (44)</p>
             <p>Sept.2016 - Jan.2017</p>
-            <p>Agence de location de véhicules</p>
-            <p>Compétences : relation client, pratique de l'anglais</p>
+            <p>Agence de location de véhicules</p>            
             <br />
             <button onclick="showExperience4Details()">Voir détail</button>
             <p class="experience4Detail">
@@ -243,11 +273,10 @@
           <div>
             <h3>Conseillère voyages</h3>
             <p>BACK ROADS, PARIS (XIV)</p>
-            <p>SEPT.2014 - AOUT 2015</p>
+            <p>Sept.2014 - Aout 2015</p>
             <p>
               Spécialiste en production et vente de voyages Etats-Unis/Canada
             </p>
-            <p>Compétences : relation client, sens de l'organisation</p>
             <br />
             <button onclick="showExperience2Details()">Voir détail</button>
             <p class="experience2Detail">
@@ -268,7 +297,7 @@
           <div>
             <h3>Jeune fille au pair à Washington, DC, USA</h3>
             <img class="aupairimg" src="./aupair.png" alt="aupair" />
-            <p>JUIL.2013 - AOUT 2014</p>
+            <p>Juil.2013 - Aout 2014</p>
             <p>1 an, 1 mois</p>
             <br />
             <button onclick="showExperience1Details()">Le job</button><br />
@@ -277,7 +306,7 @@
               dans un quartier huppé de Washington, DC. Mon travail était de
               m'occuper des trois jeunes enfants : un bébé (1 an à mon départ),
               sa sœur de 5 ans et son frère de 7 ans. Rythme de 45H par semaine.
-              Cette expérience m'a surtout enseigné l'autonomie, la patience, le
+              <br> Cette expérience m'a surtout enseigné l'autonomie, la patience, le
               sens des responsabilités.
             </p>
             <br />
@@ -288,7 +317,7 @@
               ou sur la côte Est, et à la fin de mon année, je suis partie faire
               un road trip d'un mois dans l'Ouest Américain. <br />
               Escapades : région de Washington DC, Philadelphie, New York
-              (plusieurs fois), Boston, Montréal (Canada). Lien vers un blog de
+              (plusieurs fois), Boston, Montréal (Canada). <br> Lien vers un blog de
               photos créé durant l'année :
               <a href="https://1aupairlife.tumblr.com/?og=1" target="_blank"
                 >ici</a
@@ -299,38 +328,86 @@
             </p>
           </div>
         </div>
+        <!-- EDUCATION -->
         <h3 id="education">Education</h3>
         <div class="education">
           <div>
-            2013 <br />
+            <strong>2013</strong><br />
             Licence Tourisme <br />
             Université d'Angers (49)
           </div>
           <div>
-            2012 <br />
+            <strong>2012</strong><br />
             BTS Ventes et Productions Touristiques <br />
             IMS, Nantes (44)
           </div>
           <div>
-            2010 <br />
+            <strong>2010</strong><br />
             Baccaleauréat technologique (Sciences et Technologies de la Gestion)
             <br />
             Lycée St-Félix, Nantes (44)
           </div>
         </div>
       </section>
+      <!-- INFOS & CONTACT -->
+      <section class="info">
+        <h2 id="info">Infos personnelles</h2>
+        <div class="interest">
+          <h3>Intérêts</h3>
+          <div class="interestDetail">
+            <div class="usa">
+              <img src="./nyc.png" alt="usa" />
+              <p>Je suis une grande passionnée des Etats-Unis</p>
+            </div>
+            <div class="evasion">
+              <img src="./evasion.png" alt="evasion" />
+              <p>Rêveuse et créative, j'adore m'évader</p>
+            </div>
+            <div class="writter">
+              <img src="./writter.png" alt="writter" />
+              <p>J'aime beaucoup écrire</p>
+            </div>
+            <div class="buddhism">
+              <img src="./buddha.png" alt="buddhism" />
+              <p>Je m'intéresse beaucoup à la philosophie bouddhiste</p>
+            </div>
+            <div class="hockey">
+              <figure class="hockeyimg">
+                <img src="./roller-skate.png" alt="roller-skate" />
+                <img src="./hockey.png" alt="hockey" />
+              </figure>
+              <p>
+                J'ai pratiqué le rink-hockey pendant plusieurs années et je suis
+                toujours impliquée dans la communauté
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="contact">
+          <h3>Me contacter</h3>
+          <p>
+            Clémence Pirault <br />
+            29 ans (20 Février 1992) <br>
+            Nantes, 44 <br>
+            <a href="mailto:clepirault@gmail.com">clepirault@gmail.com</a> <br>
+            +33 6 48 98 15 40 <br>
+            LinkedIn : <a href="https://www.linkedin.com/in/clemence-pirault/" target="_blank">clemence-pirault</a> <br>
+            Github : <a href="https://github.com/clepirault" target="_blank">clepirault</a>
+          </p>
+        </div>
+      </section>
     </main>
     <!-- FOOTER -->
     <footer>
       <ul class="social">
-        <li><img src="./github.svg" alt="Github" title="Github" /></li>
-        <li><img src="./LinkedIn.svg" alt="LinkedIn" title="LinkedIn" /></li>
-        <li><img src="./mail.svg" alt="Contact" title="Contact" /></li>
+        <li><a href="https://github.com/clepirault" target="_blank"><img src="./github.svg" alt="Github" title="Github" /></a></li>
+        <li><a href="https://www.linkedin.com/in/clemence-pirault/" target="_blank"><img src="./LinkedIn.svg" alt="LinkedIn" title="LinkedIn" /></a></li>
+        <li><a href="mailto:clepirault@gmail.com"><img src="./mail.svg" alt="Contact" title="Contact" /></a></li>
         <li>
-          <img src="./download.svg" alt="CV" title="Télécharger mon CV" />
+          <a href="./cv-clemence-pirault.pdf" target="_blank"><img src="./download.svg" alt="CV" title="Télécharger mon CV" /></a>
         </li>
       </ul>
-      <p>clepirault@gmail.com | +33648981540</p>
+      <p><a href="mailto:clepirault@gmail.com">clepirault@gmail.com</a> | +33648981540</p>
     </footer>
     <script src="./index.js"></script>
   </body>

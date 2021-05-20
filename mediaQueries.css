@@ -1,0 +1,99 @@
+@media screen and (max-width: 767px) {
+  body {
+    width: 100vw;
+  }
+  main {
+    width: 100vw;
+  }
+  .homeImage {
+    width: 100vw;
+  }
+  /* ABOUT */
+  .about {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3em;
+  }
+  .aboutContent {
+    width: 80%;
+  }
+  .aboutContent h2 {
+    text-align: center;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+  .aboutContent p {
+    padding-bottom: 1em;
+    text-align: justify;
+  }
+  .avatar {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 40vw;
+    border-radius: 6em;
+  }
+  /* EDUCATION */
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .education div {
+    width: 60vw;
+    margin-bottom: 2em;
+  }
+  /* EXPERIENCE */
+  .experience div {
+    width: 60vw;
+  }
+  .reconversionDetail {
+    width: 70vw;
+  }
+  .reconversionTitle {
+    width: 60vw;
+  }
+  /* SKILLS */
+  .skills {
+    width: 60vw;
+  }
+  .skillsicon { /* ICON ITEM */
+    height: 2.5em;
+  }
+  .skillsicons { /* ICONS BLOCK */
+    display: flex;
+    justify-content: center;
+  }
+  .skills p {
+    width: 100%;
+  }
+  /* PROJECTS */
+  .naotri, .hackathon, .portfolio  {
+    display: flex;
+    flex-direction: column;
+    align-self: auto;
+  }
+  .projectsContent {
+    width: 60vw;
+  }
+  .naotriimg, .hackathonimg {
+    height: 30vh;
+    margin-bottom: 1em;
+    margin-right: 0;
+  }
+  .portfolioimg {
+    width: 60vw;
+    margin-bottom: 1em;
+  }
+  /* INFOS & CONTACT */
+  .interestDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .usa, .evasion, .writter, .buddhism, .hockey {
+    margin-bottom: 2em;
+  }
+}
