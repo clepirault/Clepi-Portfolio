@@ -7,5 +7,5 @@
 **HTML, CSS, JS**
 
 ## Links 🔗 :
-[Website](https://clepirault.github.io/Portfolio-v1/)
-[Portfolio](https://clemence-pirault.vercel.app/portfolio/portfolio-v1)
+* [Website](https://clepirault.github.io/Portfolio-v1/)
+* [Portfolio](https://clemence-pirault.vercel.app/portfolio/portfolio-v1)
